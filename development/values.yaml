@@ -1,4 +1,4 @@
 hfplatform:
-  ingress:
-    hosts:
-      - host: config-service.development
+ ingress:
+  hosts:
+   - host: config-service.development
