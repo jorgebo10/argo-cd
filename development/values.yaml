@@ -2,3 +2,6 @@ hfplatform:
   ingress:
     hosts:
       - host: config-service.development
+        paths:
+          - path: /
+            pathType: Prefix

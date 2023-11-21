@@ -2,3 +2,6 @@ hfplatform:
   ingress:
     hosts:
       - host: config-service.staging
+        paths:
+          - path: /
+            pathType: Prefix
