@@ -1,0 +1,15 @@
+repos:
+- repo: https://github.com/aquasecurity/tfsec
+  rev: v1.28.1
+  hooks:
+  - id: tfsec
+    args: [--no-color]
+    stages: ["commit", "push"]
+
+- repo: https://github.com/trufflesecurity/trufflehog
+  rev: v3.31.6
+  hooks:
+  - id: trufflehog
+    name: TruffleHog
+    description: Detect secrets in your data.
+    stages: ["commit", "push"]   
